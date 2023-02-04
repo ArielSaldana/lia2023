@@ -7,6 +7,7 @@ import Invite from './components/invite/Invite'
 
 function App() {
     const [count, setCount] = useState(0)
+    const [scroll, setScroll] = useState(0)
     useEffect(() => {
         const lenis = new Lenis({
             duration: 1.2,
@@ -27,6 +28,8 @@ function App() {
 
         // @ts-ignore
         lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+            setScroll(scroll)
+
             if (scroll > 300) {
                 glassPane.style.backgroundColor = 'black'
                 blob1.style.backgroundColor = '#4e2084'
@@ -38,7 +41,6 @@ function App() {
                 blob2.style.backgroundColor = '#f4ce5e'
                 blob3.style.backgroundColor = '#ca9c62'
             }
-            console.log(scroll)
 //            console.log({ scroll, limit, velocity, direction, progress })
         })
 
@@ -48,32 +50,12 @@ function App() {
         }
 
         requestAnimationFrame(raf)
-    })
+    }, [])
 
     return (
         <div className="App">
-            <Hero></Hero>
+            <Hero scroll={scroll} setScroll={setScroll}></Hero>
             <Invite/>
-            {/*<div>*/}
-            {/*  <a href="https://vitejs.dev" target="_blank">*/}
-            {/*    <img src="/vite.svg" className="logo" alt="Vite logo" />*/}
-            {/*  </a>*/}
-            {/*  <a href="https://reactjs.org" target="_blank">*/}
-            {/*    <img src={reactLogo} className="logo react" alt="React logo" />*/}
-            {/*  </a>*/}
-            {/*</div>*/}
-            {/*<h1>Vite + React</h1>*/}
-            {/*<div className="card">*/}
-            {/*  <button onClick={() => setCount((count) => count + 1)}>*/}
-            {/*    count is {count}*/}
-            {/*  </button>*/}
-            {/*  <p>*/}
-            {/*    Edit <code>src/App.tsx</code> and save to test HMR*/}
-            {/*  </p>*/}
-            {/*</div>*/}
-            {/*<p className="read-the-docs">*/}
-            {/*  Click on the Vite and React logos to learn more*/}
-            {/*</p>*/}
         </div>
     )
 }

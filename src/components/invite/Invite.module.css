@@ -4,12 +4,10 @@
 
 div.inviteWrapper {
     max-width: 500px;
-/*    height: 800px;*/
     margin: 0 auto;
-/*    background: black;*/
     position: relative;
     width: var(--hex-parent-height);
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
 }
 
@@ -84,5 +82,3 @@ div.inviteWrapper .inviteInfo section .contentDivider {
 div.inviteWrapper .inviteInfo section .contentDivider time {
     padding-right: 20px;
 }
-
-

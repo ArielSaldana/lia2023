@@ -16,10 +16,14 @@ div.scrollDown {
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 1;
+    transition: opacity .4s ease-out;
 }
 
 div.scrollDown > div {
+    opacity: 1;
     display: inline-block;
     padding: 20px;
     background: black;
+    transition: opacity .5s ease-in;
 }
