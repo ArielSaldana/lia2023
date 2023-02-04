@@ -1,12 +1,7 @@
-:root {
-    --hex-parent-height: 100%;
-}
-
 div.inviteWrapper {
     max-width: 500px;
     margin: 0 auto;
     position: relative;
-    width: var(--hex-parent-height);
     padding: 40px;
     box-sizing: border-box;
 }
