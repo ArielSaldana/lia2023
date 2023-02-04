@@ -25,6 +25,7 @@ function App() {
         const blob2 = document.getElementsByClassName('blob2')[0] as HTMLElement
         const blob3 = document.getElementsByClassName('blob3')[0] as HTMLElement
 
+        // @ts-ignore
         lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
             if (scroll > 300) {
                 glassPane.style.backgroundColor = 'black'
@@ -41,7 +42,7 @@ function App() {
 //            console.log({ scroll, limit, velocity, direction, progress })
         })
 
-        function raf(time) {
+        function raf(time: any) {
             lenis.raf(time)
             requestAnimationFrame(raf)
         }
