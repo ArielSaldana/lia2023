@@ -1,9 +1,10 @@
 import styles from './Hero.module.css'
 import {useRef, useState} from "react";
 import { Viewport } from "@unreal/pan"
+import ScrollInformation from "../ScrollInformation";
 
 interface props {
-    scroll: number
+    scroll: ScrollInformation
     setScroll: Function
 }
 
@@ -12,14 +13,14 @@ export default function Hero({scroll, setScroll}: props) {
     let titleElemRef = useRef(null)
     if (scrollDownElementRef.current !== null) {
         const elem = scrollDownElementRef.current as HTMLElement
-        if (scroll > 100) {
+        if (scroll.scroll > 100) {
             elem.style.opacity = '0'
         } else {
             elem.style.opacity = '1'
         }
     }
     const viewportHeight = Viewport.getInformation().height
-    const scrollCap = scroll > viewportHeight ? viewportHeight: scroll
+    const scrollCap = scroll.scroll > viewportHeight ? viewportHeight: scroll.scroll
     const transform = (1 - (scrollCap / viewportHeight))
 
     return (

@@ -5,9 +5,15 @@ import Lenis from '@studio-freight/lenis'
 import Hero from './components/hero/Hero'
 import Invite from './components/invite/Invite'
 
+
+interface scroll {
+    scroll: number,
+    progress: number
+}
+
 function App() {
     const [count, setCount] = useState(0)
-    const [scroll, setScroll] = useState(0)
+    const [scroll, setScroll] = useState<scroll>({scroll: 0, progress: 0})
     useEffect(() => {
         const lenis = new Lenis({
             duration: 1.2,
@@ -28,7 +34,11 @@ function App() {
 
         // @ts-ignore
         lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
-            setScroll(scroll)
+            console.log(progress)
+            setScroll({
+                scroll,
+                progress
+            })
 
             if (scroll > 300) {
                 glassPane.style.backgroundColor = 'black'

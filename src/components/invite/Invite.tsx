@@ -39,6 +39,11 @@ export default function Invite() {
                     <span className={styles.title}>RSVP</span>
                     <time>Please RSVP by</time>
                 </section>
+                <section>
+                    <span className={styles.title}>Information</span>
+                    <p className={styles.center}>Feel free to BYOB for the pre dinner celebration.</p>
+                    <p className={styles.center}>The restaurant has an 5 minute grace period. Please let me know if you're unable to make it to the reservation.</p>
+                </section>
             </div>
         </div>
     )

@@ -44,6 +44,9 @@ div.inviteWrapper .archWrapper .arch {
     z-index: 10;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
+
+    transform-origin: bottom right;
+    transition: background-color .5s ease-in-out;
 }
 
 div.inviteWrapper .inviteInfo {
@@ -82,4 +85,8 @@ div.inviteWrapper .inviteInfo section .contentDivider {
 
 div.inviteWrapper .inviteInfo section .contentDivider time {
     padding-right: 20px;
+}
+
+p.center {
+    text-align: center;
 }
