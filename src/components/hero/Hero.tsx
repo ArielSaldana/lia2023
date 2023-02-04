@@ -8,7 +8,6 @@ interface props {
 }
 
 export default function Hero({scroll, setScroll}: props) {
-    const [scale, setScale] = useState(1)
     let scrollDownElementRef = useRef(null)
     let titleElemRef = useRef(null)
     if (scrollDownElementRef.current !== null) {

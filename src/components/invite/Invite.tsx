@@ -31,6 +31,11 @@ export default function Invite() {
                 </section>
 
                 <section>
+                    <span className={styles.title}>Dress Code</span>
+                    <time>Semi-Formal</time>
+                </section>
+
+                <section>
                     <span className={styles.title}>RSVP</span>
                     <time>Please RSVP by</time>
                 </section>
