@@ -25,8 +25,8 @@ export default function Invite() {
                         <p>Pre dinner celebration with drinks and cakes</p>
                     </div>
                     <div className={styles.contentDivider}>
-                        <time>6PM</time>
-                        <p>Dinner reservation at Zaytinya Location Icon.</p>
+                        <time>8PM</time>
+                        <p>Dinner reservation at REDACTED Location Icon.</p>
                     </div>
                 </section>
 
