@@ -1,0 +1,88 @@
+:root {
+    --hex-parent-height: 100%;
+}
+
+div.inviteWrapper {
+    max-width: 500px;
+/*    height: 800px;*/
+    margin: 0 auto;
+/*    background: black;*/
+    position: relative;
+    width: var(--hex-parent-height);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+div.inviteWrapper .archWrapper {
+    position: relative;
+    width: 100%;
+/*    padding-top: 56.25%; !* 16:9 or widescreen aspect ratio *!*/
+    padding-top: 100%; /* 1:1 or square */
+}
+
+div.inviteWrapper div.archContent {
+    padding-top: 60%;
+    padding-left: 40%;
+}
+
+div.inviteWrapper .archWrapper p {
+    color: black;
+    margin: 0;
+}
+
+div.inviteWrapper .archWrapper p.large {
+    color: black;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+div.inviteWrapper .archWrapper p.small {
+    color: black;
+    margin: 4px 0;
+}
+
+div.inviteWrapper .archWrapper .arch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 10;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+div.inviteWrapper .inviteInfo {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+div.inviteWrapper .inviteInfo section {
+    padding-top: 40px;;
+}
+
+div.inviteWrapper .inviteInfo section span.title {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+div.inviteWrapper .inviteInfo section time {
+    display: inline-block;
+}
+
+div.inviteWrapper .inviteInfo section p {
+    margin-top: 0;
+}
+
+div.inviteWrapper .inviteInfo section .contentDivider {
+    display: flex;
+}
+
+div.inviteWrapper .inviteInfo section .contentDivider time {
+    padding-right: 20px;
+}
+
+
