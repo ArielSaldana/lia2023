@@ -21,12 +21,12 @@ export default function Hero({scroll, setScroll}: props) {
     }
     const viewportHeight = Viewport.getInformation().height
     const scrollCap = scroll > viewportHeight ? viewportHeight: scroll
-    const opacity = (1 - (scrollCap / viewportHeight))
+    const transform = (1 - (scrollCap / viewportHeight))
 
     return (
         <div className={styles.hero}>
             <h1 style={{
-                transform: `scale( ${opacity} )`
+                transform: `scale( ${transform} )`
             }} ref={titleElemRef}>Lia's 25th Birthday</h1>
             <div ref={scrollDownElementRef} className={styles.scrollDown}>
                 <div>
