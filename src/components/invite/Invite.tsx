@@ -1,5 +1,4 @@
 import styles from './Invite.module.css'
-import flower from '../../assets/flower.svg'
 
 export default function Invite() {
     // @ts-ignore
