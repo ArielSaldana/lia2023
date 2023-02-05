@@ -34,7 +34,6 @@ function App() {
 
         // @ts-ignore
         lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
-            console.log(progress)
             setScroll({
                 scroll,
                 progress
