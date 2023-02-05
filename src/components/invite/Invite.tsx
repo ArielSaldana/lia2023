@@ -1,20 +1,18 @@
 import styles from './Invite.module.css'
+import flower from '../../assets/flower.svg'
 
 export default function Invite() {
+    // @ts-ignore
     return (
         <div className={styles.inviteWrapper}>
             <div className={styles.archWrapper}>
                 <div className={styles.arch}>
-
                     <svg className={styles.flower}
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 397.332 500"
                         >
                         <title>Artboard 1</title>
                         <defs>
-                            <pattern id="watercolour" patternUnits="userSpaceOnUse" width="100%" height="100%">
-                                <image xlink:href="https://static.vecteezy.com/system/resources/previews/000/204/451/non_2x/vector-watercolour-texture.jpg" width="100%" height="100%"/>
-                            </pattern>
                             <mask id="mask1">
                                 <path
                                     id="mask1"
@@ -61,8 +59,8 @@ export default function Invite() {
                             d="M86.346,128.409s142.229-13.231,136.332-9.342-135.206,25.156-130.7,30.72,149.905-6.405,142.527-1.265-99.714,29.6-113.237,36.8"
                             fill="none"
                             stroke="url(#watercolour)"
-                            stroke-miterlimit="10"
-                            stroke-width="34"
+                            strokeMiterlimit="10"
+                            strokeWidth="34"
                         />
                         <path
                             mask="url(#mask2)"
@@ -70,8 +68,8 @@ export default function Invite() {
                             pathLength="1" d="M168.872,180.321s120.75,73.041,113.993,80.945S175.03,209.684,161.654,210.907s39.611,61.864,80.13,67.666,10.365,4.484,10.365,4.484-84.924-3.486-77.442.477,57.614,20.724,68.526,27.113"
                             fill="none"
                             stroke="url(#watercolour)"
-                            stroke-miterlimit="10"
-                            stroke-width="34"
+                            strokeMiterlimit="10"
+                            strokeWidth="34"
                         />
 
                         <g className={styles.illustration} id="illustration">
@@ -1196,8 +1194,6 @@ export default function Invite() {
                             </g>
                         </g>
                     </svg>
-
-
                     <div className={styles.archContent}>
                         <p className={styles.small}>You're invited to</p>
                         <p className={styles.large}>Lia's</p>
