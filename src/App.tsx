@@ -50,7 +50,6 @@ function App() {
                 blob2.style.backgroundColor = '#f4ce5e'
                 blob3.style.backgroundColor = '#ca9c62'
             }
-//            console.log({ scroll, limit, velocity, direction, progress })
         })
 
         function raf(time: any) {

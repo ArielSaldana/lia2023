@@ -9,8 +9,10 @@ interface props {
 }
 
 export default function Hero({scroll, setScroll}: props) {
-    let scrollDownElementRef = useRef(null)
     let titleElemRef = useRef(null)
+    let scrollDownElementRef = useRef(null)
+
+    // controls when "scrolldown" button fades out
     if (scrollDownElementRef.current !== null) {
         const elem = scrollDownElementRef.current as HTMLElement
         if (scroll.scroll > 100) {
@@ -19,6 +21,8 @@ export default function Hero({scroll, setScroll}: props) {
             elem.style.opacity = '1'
         }
     }
+
+    // transform controls text effect
     const viewportHeight = Viewport.getInformation().height
     const scrollCap = scroll.scroll > viewportHeight ? viewportHeight: scroll.scroll
     const transform = (1 - (scrollCap / viewportHeight))
