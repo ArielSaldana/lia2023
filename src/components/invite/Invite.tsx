@@ -1210,27 +1210,28 @@ export default function Invite() {
                     <span className={styles.title}>Itinerary</span>
                     <div className={styles.contentDivider}>
                         <time>6PM</time>
-                        <p>Pre dinner celebration with drinks and cakes</p>
+                        <p>Pre dinner celebration with drinks and cake.</p>
                     </div>
                     <div className={styles.contentDivider}>
                         <time>8PM</time>
-                        <p>Dinner reservation at REDACTED Location Icon.</p>
+                        <p>Dinner reservation at <a href="https://goo.gl/maps/GQkFgx32UypsHiC48">Zaytinya.</a></p>
                     </div>
                 </section>
 
                 <section>
                     <span className={styles.title}>Dress Code</span>
-                    <time>Semi-Formal</time>
+                    <time>Casual Cocktail</time>
                 </section>
 
                 <section>
                     <span className={styles.title}>RSVP</span>
-                    <time>Please RSVP by</time>
+                    <time>Please RSVP using this <a href="https://www.eventbrite.com/e/lias-25th-tickets-534529360707">EventBrite link</a> by the 20th, so we can get an accurate headcount for the reservation!</time>
                 </section>
                 <section>
                     <span className={styles.title}>Information</span>
                     <p className={styles.center}>Feel free to BYOB for the pre dinner celebration.</p>
-                    <p className={styles.center}>The restaurant has an 5 minute grace period. Please let me know if you're unable to make it to the reservation.</p>
+                    <p className={styles.center}>Just you, no gifts.</p>
+                    <p className={styles.center}><b>The restaurant has an 5 minute grace period. Please let me know if you're unable to make it to the reservation.</b></p>
                 </section>
             </div>
         </div>
