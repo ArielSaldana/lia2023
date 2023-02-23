@@ -1213,8 +1213,8 @@ export default function Invite() {
                         <p>Pre dinner celebration with drinks and cake.</p>
                     </div>
                     <div className={styles.contentDivider}>
-                        <time>8PM</time>
-                        <p>Dinner reservation at <a href="https://goo.gl/maps/GQkFgx32UypsHiC48">Zaytinya.</a></p>
+                        <time>6:30PM</time>
+                        <p>Dinner reservation at <a href="https://goo.gl/maps/EzPpyTiz4M3EnYtX7">Buddakan.</a></p>
                     </div>
                 </section>
 
